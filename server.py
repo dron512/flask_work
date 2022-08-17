@@ -26,7 +26,7 @@ def member():
         user='do1',
         password='do1',
         charset='utf8',
-        database='test')
+        database='sam')
     cur = db.cursor()
     cur.execute('select * from member')
     rs = cur.fetchall()
@@ -45,7 +45,7 @@ def memberform():
                 user='do1',
                 password='do1',
                 charset='utf8',
-                database='test')
+                database='sam')
         cur = db.cursor()
         cur.execute(f'''insert into member 
                      (email,password,name,regdate)
@@ -57,7 +57,7 @@ def memberform():
 
 
 @app.route("/KNeighbors", methods=['GET', 'POST'])
-def test():
+def sam():
     pred1 = 'x0과 x1을 입력하셔야 합니다.'
     pred2 = '파일을 업로드 하셔야 합니다.'
     knre = ""
